@@ -1,0 +1,19 @@
+# theme.yaml configuration file
+
+name: Display notice
+license: GPLv3
+licenselink: https://github.com/martignoni/hugo-notice/blob/master/LICENSE
+description: Hugo theme component to display nice info notices
+homepage: https://github.com/martignoni/hugo-notice
+tags:
+  - component
+  - notice
+  - multilingual
+features:
+  - nicely display notices
+  - multilingual (en, fr, de)
+min_version: 0.40.0
+
+author:
+  name: Nicolas Martignoni
+  homepage: https://martignoni.net
