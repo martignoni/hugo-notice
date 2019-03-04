@@ -1,8 +1,6 @@
 # hugo-notice
 
-<!--
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/budparr/awesome-hugo)
- -->
 
 ## About
 
