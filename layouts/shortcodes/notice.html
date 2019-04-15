@@ -7,5 +7,5 @@
 {{- $.Page.Scratch.Add "noticecount" 1 -}}
 <div class="notice {{ $noticeType }}" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>
 <p class="first notice-title">{{- i18n $noticeType -}}</p>
-{{- .Inner -}}
+{{- .Inner | markdownify -}}
 </div>

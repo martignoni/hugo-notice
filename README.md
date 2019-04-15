@@ -23,15 +23,15 @@ This components comes with english, french and german localizations for the noti
     ```
 3. In your site, use the shortcode, this way:
     ```go
-    {{% notice warning %}}
+    {{< notice warning >}}
     This is a warning notice. Be warned!
-    {{% /notice %}}
+    {{< /notice >}}
     ```
     or
     ```go
-    {{% notice tip %}}
+    {{< notice tip >}}
     This is a very good tip.
-    {{% /notice %}}
+    {{< /notice >}}
     ```
 
 ### Credits
