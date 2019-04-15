@@ -1,5 +1,8 @@
 {{/* Available notice types: warning, info, note, tip */}}
 {{- $noticeType := .Get 0 -}}
+{{/* Workaround markdownify inconsistency for single/multiple paragraphs */}}
+{{- $raw := (markdownify .Inner | chomp) -}}
+{{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
 {{/* Count how many times we've called this shortcode and load the css if it's the first time */}}
 {{- if not ($.Page.Scratch.Get "noticecount") -}}
 <style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice-title:before{margin-right:8px;font-family:FontAwesome;font-weight:400}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning .notice-title:before{content:'\f071'}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info .notice-title:before{content:'\f05a'}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note .notice-title:before{content:'\f06a'}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip .notice-title:before{content:'\f058'}.notice.tip{background:#e6f9e6}</style>
@@ -7,5 +10,5 @@
 {{- $.Page.Scratch.Add "noticecount" 1 -}}
 <div class="notice {{ $noticeType }}" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>
 <p class="first notice-title">{{- i18n $noticeType -}}</p>
-{{- .Inner | markdownify -}}
+{{- if or $block (not $raw) }}{{ $raw }}{{ else }}<p>{{ $raw }}</p>{{ end -}}
 </div>
