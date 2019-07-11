@@ -38,4 +38,4 @@ This components comes with english, french, german and portuguese localizations 
 
 Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
 
-Thanks to Geraldo Riebero for the portuguese localization.
+Thanks to Geraldo Ribeiro for the portuguese localization.
