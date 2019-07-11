@@ -6,7 +6,7 @@
 
 This is not a standalone theme. It is a [Hugo](https://gohugo.io) theme component providing a shortcode: `notice` to display nice notices. Four notice types are provided: `warning`, `info`, `note` and `tip`.
 
-This components comes with english, french and german localizations for the notice heading. Other languages welcome! Send your pull request.
+This components comes with english, french, german and portuguese localizations for the notice headings. Other languages welcome! Send your pull request.
 
 ![Screenshot](screenshot.png)
 
@@ -37,3 +37,5 @@ This components comes with english, french and german localizations for the noti
 ### Credits
 
 Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
+
+Thanks to Geraldo Riebero for the portuguese localization.
