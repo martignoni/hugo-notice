@@ -1,8 +1,8 @@
 - id: warning
   translation: "Warnung"
 - id: note
-  translation: "Notiz"
+  translation: "Anmerkung"
 - id: info
   translation: "Info"
 - id: tip
-  translation: "Hint"
+  translation: "Hinweis"
