@@ -39,5 +39,6 @@ This components comes with english, french, german, italian and portuguese local
 Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
 
 Thanks to
-- Geraldo Ribeiro for the portuguese localization,
-- @thatrocketx for the italian localization.
+- [Geraldo Ribeiro](https://github.com/geraldolsribeiro) for the portuguese localization,
+- [thatrocketx](https://github.com/thatrocketx) for the italian localization,
+- [理头张](https://github.com/qidongz) for the chinese localization.
