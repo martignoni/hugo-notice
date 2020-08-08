@@ -42,3 +42,4 @@ Thanks to
 - [Geraldo Ribeiro](https://github.com/geraldolsribeiro) for the portuguese localization,
 - [thatrocketx](https://github.com/thatrocketx) for the italian localization,
 - [理头张](https://github.com/qidongz) for the chinese localization.
+- [Алексей Корнеев](https://github.com/korney4eg) for the russian localization.
