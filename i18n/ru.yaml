@@ -1,0 +1,8 @@
+- id: warning
+  translation: "Внимание!"
+- id: note
+  translation: "Заметка"
+- id: info
+  translation: "Информация"
+- id: tip
+  translation: "Совет"
