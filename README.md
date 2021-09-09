@@ -6,7 +6,7 @@
 
 A [Hugo](https://gohugo.io) theme component providing a shortcode: `notice` to display nice notices. Four notice types are provided: `warning`, `info`, `note` and `tip`.
 
-This component comes with __9 localizations__: English, French, German, Italian, Portuguese, Chinese, Russian, Turkish and Arabic. Other languages welcome! Send your pull request.
+This component comes with __11 localizations__: English, French, German, Italian, Portuguese, Spanish, Chinese, Russian, Turkish, Arabic and Polish. Other languages welcome! Send your pull request.
 
 ![Screenshot](screenshot.png)
 
@@ -41,6 +41,8 @@ Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
 Thanks to
 - [Geraldo Ribeiro](https://github.com/geraldolsribeiro) for the Portuguese localization.
 - [thatrocketx](https://github.com/thatrocketx) for the Italian localization.
+- [casaqori](https://github.com/casaqori) for the Spanish localization.
 - [理头张](https://github.com/qidongz) for the Chinese localization.
 - [Алексей Корнеев](https://github.com/korney4eg) for the Russian localization.
 - [Ahmad Al Maaz](https://github.com/Music47ell) for the Turkish and Arabic localizations.
+- [Rafal S.](https://github.com/sulik76) for the Polish localization.
