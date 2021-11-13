@@ -46,3 +46,4 @@ Thanks to
 - [Алексей Корнеев](https://github.com/korney4eg) for the Russian localization.
 - [Ahmad Al Maaz](https://github.com/Music47ell) for the Turkish and Arabic localizations.
 - [Rafal S.](https://github.com/sulik76) for the Polish localization.
+- [Oskari J. Manninen](https://github.com/x7Gv) for the Finnish localization.
