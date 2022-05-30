@@ -1,0 +1,8 @@
+- id: warning
+  translation: "경고"
+- id: note
+  translation: "노트"
+- id: info
+  translation: "알림"
+- id: tip
+  translation: "정보"
