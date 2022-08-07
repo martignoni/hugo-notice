@@ -1,0 +1,8 @@
+- id: warning
+  translation: "Onyo"
+- id: note
+  translation: "Kumbuka"
+- id: info
+  translation: "Habari"
+- id: tip
+  translation: "Kidokezo"
