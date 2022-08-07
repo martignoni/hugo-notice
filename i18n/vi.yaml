@@ -1,0 +1,8 @@
+- id: warning
+  translation: "Cảnh báo"
+- id: note
+  translation: "Ghi chú"
+- id: info
+  translation: "Thông tin"
+- id: tip
+  translation: "Mẹo"
