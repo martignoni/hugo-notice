@@ -1,5 +1,5 @@
 {{/* Available notice types: warning, info, note, tip */}}
-{{- $noticeType := .Get 0 | default "info" -}}
+{{- $noticeType := .Get 0 | default "note" -}}
 {{/* Workaround markdownify inconsistency for single/multiple paragraphs */}}
 {{- $raw := (markdownify .Inner | chomp) -}}
 {{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
