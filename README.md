@@ -14,18 +14,57 @@ Other languages welcome! Send your pull request.
 
 ![Screenshot](screenshot.png)
 
-## Usage
+## Installation
+
+### Hugo module
+
+1. Initialize your existing site as hugo module
+
+    ```shell
+    hugo mod init github.com/USERNAME/REPO
+    ```
+
+2. Add the `hugo-notice` as a hugo module to be able to get upstream changes later
+
+    ```shell
+    hugo mod get github.com/martignoni/hugo-notice
+    ```
+
+3. In your site's or theme's configuration file `hugo.yaml` or `hugo.toml`, add a new `module` section and define both `hugo-notice` and your currently used theme as modules to be imported.
+
+    Example, with `hugo.yaml`:
+    ```yaml
+    module:
+      imports:
+        - path: github.com/martignoni/hugo-notice
+        - path: my-theme
+    ```
+    or, with `hugo.toml`,
+    ```toml
+    [module]
+      [[module.imports]]
+        path = "github.com/martignoni/hugo-notice"
+      [[module.imports]]
+        path = "my-theme"
+    ```
+
+### Git submodule
 
 1. Add the `hugo-notice` as a submodule to be able to get upstream changes later `git submodule add https://github.com/martignoni/hugo-notice.git themes/hugo-notice`
-2. Add `hugo-notice` as the left-most element of the `theme` list variable in your site's or theme's configuration file `config.yaml` or `config.toml`. Example, with `config.yaml`:
+
+2. Add `hugo-notice` as the left-most element of the `theme` list variable in your site's or theme's configuration file `hugo.yaml` or `hugo.toml`.
+
+   Example, with `hugo.yaml`:
     ```yaml
     theme: ["hugo-notice", "my-theme"]
     ```
-    or, with `config.toml`,
+    or, with `hugo.toml`,
     ```toml
     theme = ["hugo-notice", "my-theme"]
     ```
-3. In your site, use the shortcode, this way:
+## Usage
+
+In your site, use the shortcode, this way:
     ```go
     {{< notice warning >}}
     This is a warning notice. Be warned!
