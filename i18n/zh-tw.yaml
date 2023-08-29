@@ -1,0 +1,8 @@
+- id: warning
+  translation: "警告"
+- id: note
+  translation: "註釋"
+- id: info
+  translation: "資訊"
+- id: tip
+  translation: "提示"
