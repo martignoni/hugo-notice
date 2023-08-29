@@ -8,7 +8,7 @@ A [Hugo](https://gohugo.io) theme component providing a shortcode: `notice` to d
 
 Four notice types are provided: `warning`, `info`, `note` and `tip`.
 
-This component comes with __localization in 15 languages__: English, French, German, Italian, Portuguese, Spanish, Chinese, Russian, Turkish, Arabic, Polish, Finnish, Korean, Vietnamese and Swahili.
+This component comes with __localization in 17 languages__: English, French, German, Italian, Portuguese, Spanish, Chinese, Russian, Turkish, Arabic, Polish, Finnish, Korean, Vietnamese, Swahili, Japanese and Chinese (Taiwan).
 
 Other languages welcome! Send your pull request.
 
@@ -93,3 +93,4 @@ Thanks to
 - [Haseop Lee](https://github.com/haservi) for the Korean localization.
 - [Bùi Nguyễn Hoàng Thọ](https://discourse.gohugo.io/u/hoangtho97/summary) for the Vietnamese localization.
 - [callaloo](https://github.com/callaloo) for the Swahili localization.
+- [kevinzch](https://github.com/kevinzch) for the Japanese and Chinese (Taiwan) localizations.
