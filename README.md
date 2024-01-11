@@ -65,17 +65,17 @@ Other languages welcome! Send your pull request.
 ## Usage
 
 In your site, use the shortcode, this way:
-    ```
-    {{< notice warning >}}
-    This is a warning notice. Be warned!
-    {{< /notice >}}
-    ```
-    or
-    ```
-    {{< notice tip >}}
-    This is a very good tip.
-    {{< /notice >}}
-    ```
+```go
+{{< notice warning >}}
+This is a warning notice. Be warned!
+{{< /notice >}}
+```
+or
+```go
+{{< notice tip >}}
+This is a very good tip.
+{{< /notice >}}
+```
 
 ### Enabling dark mode
 
