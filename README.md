@@ -4,7 +4,7 @@
 
 ## About
 
-A [Hugo](https://gohugo.io) theme component providing a shortcode: `notice` to display nice notices. Dark mode supported!
+A [Hugo](https://gohugo.io) theme component providing a shortcode: `notice` to display nice notices. Dark mode is supported!
 
 Four notice types are provided: `warning`, `info`, `note` and `tip`.
 
@@ -65,17 +65,23 @@ Other languages welcome! Send your pull request.
 ## Usage
 
 In your site, use the shortcode, this way:
-    ```go
+    ```
     {{< notice warning >}}
     This is a warning notice. Be warned!
     {{< /notice >}}
     ```
     or
-    ```go
+    ```
     {{< notice tip >}}
     This is a very good tip.
     {{< /notice >}}
     ```
+
+### Enabling dark mode
+
+We recommend that you use the standard [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature to detect if a user has requested light or dark color themes. In this case, dark mode will work automatically. The `prefers-color-scheme` media feature is fully supported by all modern browsers.
+
+Another way to make it work is to inject (e.g. via Javascript) the class `dark` into the `body` element of your pages when dark mode is needed.
 
 ### Credits
 
