@@ -16,7 +16,7 @@ Other languages welcome! Send your pull request.
 
 ## Installation
 
-### Hugo module
+### As a Hugo module
 
 1. Initialize your existing site as hugo module
 
@@ -48,7 +48,7 @@ Other languages welcome! Send your pull request.
         path = "my-theme"
     ```
 
-### Git submodule
+### As a Git submodule
 
 1. Add the `hugo-notice` as a submodule to be able to get upstream changes later `git submodule add https://github.com/martignoni/hugo-notice.git themes/hugo-notice`
 
@@ -83,7 +83,7 @@ We recommend that you use the standard [`prefers-color-scheme`](https://develope
 
 Another way to make it work is to inject (e.g. via Javascript) the class `dark` into the `body` element of your pages when dark mode is needed.
 
-### Credits
+## Credits
 
 Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
 
