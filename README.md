@@ -89,6 +89,8 @@ Another way to make it work is to inject (e.g. via Javascript) the class `dark` 
 
 Just copy the icons from one of the subfolders of folder `icons/` into folder `icons/`.
 
+Any __solid__ SVG icons can be used. If you want to contribute your open licensed icons, your pull request is welcome.
+
 ## Credits
 
 Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
