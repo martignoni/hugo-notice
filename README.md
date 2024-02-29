@@ -4,7 +4,9 @@
 
 ## About
 
-A [Hugo](https://gohugo.io) theme component providing a shortcode: `notice` to display nice notices. Dark mode is supported!
+A [Hugo](https://gohugo.io) theme component providing a shortcode: `notice` to display nice notices, and supporting dark mode.
+
+Several sets of icons are provided too: make your choice second your taste!
 
 Four notice types are provided: `warning`, `info`, `note` and `tip`.
 
@@ -82,6 +84,10 @@ This is a very good tip.
 We recommend that you use the standard [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature to detect if a user has requested light or dark color themes. In this case, dark mode will work automatically. The `prefers-color-scheme` media feature is fully supported by all modern browsers.
 
 Another way to make it work is to inject (e.g. via Javascript) the class `dark` into the `body` element of your pages when dark mode is needed.
+
+### Changing icon set
+
+Just copy the icons from one of the subfolders of folder `icons/` into folder `icons/`.
 
 ## Credits
 
