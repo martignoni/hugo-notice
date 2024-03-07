@@ -108,3 +108,4 @@ Thanks to
 - [Bùi Nguyễn Hoàng Thọ](https://discourse.gohugo.io/u/hoangtho97/summary) for the Vietnamese localization.
 - [callaloo](https://github.com/callaloo) for the Swahili localization.
 - [kevinzch](https://github.com/kevinzch) for the Japanese and Chinese (Taiwan) localizations.
+- [rea1shane](https://github.com/rea1shane) for suggesting and implementing a few useful features.
