@@ -126,7 +126,7 @@
 {{- end -}}
 
 <div class="notice {{ $noticeType }}" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>
-    <p class="notice-title">
+    <p class="first notice-title">
         <span class="icon-notice baseline">
             {{ printf "icons/%s.svg" $noticeType | readFile | safeHTML }}
         </span>
