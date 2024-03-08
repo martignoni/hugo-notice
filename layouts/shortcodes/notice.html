@@ -5,8 +5,8 @@
 {{- $raw := (markdownify .Inner | chomp) -}}
 {{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
 
-{{/* Count how many times we've called this shortcode and load the css if it's the first time */}}
-{{- if not ($.Page.Scratch.Get "noticecount") -}}
+{{/* Load the css if it's the first time */}}
+{{- if not ($.Page.Scratch.Get "notice-style-loaded-flag") -}}
 <style type="text/css">
     .notice {
         --root-color: #444;
@@ -128,9 +128,8 @@
         position: relative
     }
 </style>
+{{- $.Page.Scratch.Set "notice-style-loaded-flag" true -}}
 {{- end -}}
-
-{{- $.Page.Scratch.Add "noticecount" 1 -}}
 
 <div class="notice {{ $noticeType }}" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>
     <p class="first notice-title">
