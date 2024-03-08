@@ -91,9 +91,11 @@ Just copy the icons from one of the subfolders of folder `icons/` into folder `i
 
 Any __solid__ SVG icons can be used. If you want to contribute your open licensed icons, your pull request is welcome.
 
-## Credits
+## Acknowledgements
 
 Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
+
+### Localization
 
 Thanks to
 - [Geraldo Ribeiro](https://github.com/geraldolsribeiro) for the Portuguese localization.
@@ -108,4 +110,12 @@ Thanks to
 - [Bùi Nguyễn Hoàng Thọ](https://discourse.gohugo.io/u/hoangtho97/summary) for the Vietnamese localization.
 - [callaloo](https://github.com/callaloo) for the Swahili localization.
 - [kevinzch](https://github.com/kevinzch) for the Japanese and Chinese (Taiwan) localizations.
+
+### Development
+
+Thanks to
+- [Gary Tai](https://github.com/gary-tai) for raising a nasty spacing bug.
+- [Dephilia](https://github.com/Dephilia) for suggesting and implementing dark mode.
+- [RoneoOrg](https://github.com/RoneoOrg) for implementing default notice type.
+- [Andreas Deininger](https://github.com/deining) for installation as a Hugo module How To.
 - [rea1shane](https://github.com/rea1shane) for suggesting and implementing a few useful features.
