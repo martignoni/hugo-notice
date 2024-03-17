@@ -1,0 +1,11 @@
+# Fallback for themes using macrolanguage code instead of language code.
+# See https://www.rfc-editor.org/rfc/rfc5646.html
+# Strings here are an exact copy of those in file `sv-se.yaml`.
+- id: warning
+  translation: "Varning"
+- id: note
+  translation: "Notera"
+- id: info
+  translation: "Information"
+- id: tip
+  translation: "Tips"
