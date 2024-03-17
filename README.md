@@ -10,7 +10,7 @@ Several sets of icons are provided too: make your choice second your taste!
 
 Four notice types are provided: `warning`, `info`, `note` and `tip`.
 
-This component comes with __localization in 17 languages__: English, French, German, Italian, Portuguese, Spanish, Chinese, Russian, Turkish, Arabic, Polish, Finnish, Korean, Vietnamese, Swahili, Japanese and Chinese (Taiwan).
+This component comes with __localization in 18 languages__: English, French, German, Italian, Portuguese, Spanish, Chinese, Russian, Turkish, Arabic, Polish, Finnish, Korean, Vietnamese, Swahili, Japanese, Chinese (Taiwan) and Swedish.
 
 Other languages welcome! Send your pull request.
 
@@ -110,6 +110,7 @@ Thanks to
 - [Bùi Nguyễn Hoàng Thọ](https://discourse.gohugo.io/u/hoangtho97/summary) for the Vietnamese localization.
 - [callaloo](https://github.com/callaloo) for the Swahili localization.
 - [kevinzch](https://github.com/kevinzch) for the Japanese and Chinese (Taiwan) localizations.
+- [mcfrojd](https://github.com/mcfrojd) for the Swedish localizations.
 
 ### Development
 
