@@ -110,7 +110,7 @@ Thanks to
 - [Bùi Nguyễn Hoàng Thọ](https://discourse.gohugo.io/u/hoangtho97/summary) for the Vietnamese localization.
 - [callaloo](https://github.com/callaloo) for the Swahili localization.
 - [kevinzch](https://github.com/kevinzch) for the Japanese and Chinese (Taiwan) localizations.
-- [mcfrojd](https://github.com/mcfrojd) for the Swedish localizations.
+- [mcfrojd](https://github.com/mcfrojd) for the Swedish localization.
 
 ### Development
 
