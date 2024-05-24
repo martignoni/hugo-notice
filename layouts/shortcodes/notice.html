@@ -8,124 +8,118 @@
 {{/* Load the css if it's the first time */}}
 {{- if not ($.Page.Scratch.Get "notice-style-loaded-flag") -}}
 <style type="text/css">
+    /* Light theme */
     .notice {
-        --root-color: #444;
-        --root-background: #eff;
         --title-color: #fff;
-        --title-background: #7bd;
-        --warning-title: #c33;
-        --warning-content: #fee;
-        --info-title: #fb7;
-        --info-content: #fec;
-        --note-title: #6be;
-        --note-content: #e7f2fa;
-        --tip-title: #5a5;
-        --tip-content: #efe
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
     }
 
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+    /* Dark theme */
     @media (prefers-color-scheme:dark) {
         .notice {
-            --root-color: #ddd;
-            --root-background: #eff;
             --title-color: #fff;
-            --title-background: #7bd;
-            --warning-title: #800;
-            --warning-content: #400;
-            --info-title: #a50;
-            --info-content: #420;
-            --note-title: #069;
-            --note-content: #023;
-            --tip-title: #363;
-            --tip-content: #121
+            --title-background-color: #069;
+            --content-color: #ddd;
+            --content-background-color: #023;
+        }
+
+        .notice.info {
+            --title-background-color: #a50;
+            --content-background-color: #420;
+        }
+
+        .notice.tip {
+            --title-background-color: #363;
+            --content-background-color: #121;
+        }
+
+        .notice.warning {
+            --title-background-color: #800;
+            --content-background-color: #400;
         }
     }
 
     body.dark .notice {
-        --root-color: #ddd;
-        --root-background: #eff;
         --title-color: #fff;
-        --title-background: #7bd;
-        --warning-title: #800;
-        --warning-content: #400;
-        --info-title: #a50;
-        --info-content: #420;
-        --note-title: #069;
-        --note-content: #023;
-        --tip-title: #363;
-        --tip-content: #121
+        --title-background-color: #069;
+        --content-color: #ddd;
+        --content-background-color: #023;
     }
 
+    body.dark .notice.info {
+        --title-background-color: #a50;
+        --content-background-color: #420;
+    }
+
+    body.dark .notice.tip {
+        --title-background-color: #363;
+        --content-background-color: #121;
+    }
+
+    body.dark .notice.warning {
+        --title-background-color: #800;
+        --content-background-color: #400;
+    }
+
+    /* Content */
     .notice {
         padding: 18px;
         line-height: 24px;
         margin-bottom: 24px;
         border-radius: 4px;
-        color: var(--root-color);
-        background: var(--root-background)
+        color: var(--content-color);
+        background: var(--content-background-color);
     }
 
     .notice p:last-child {
         margin-bottom: 0
     }
 
+    /* Title */
     .notice-title {
         margin: -18px -18px 12px;
         padding: 4px 18px;
         border-radius: 4px 4px 0 0;
         font-weight: 700;
         color: var(--title-color);
-        background: var(--title-background)
+        background: var(--title-background-color);
     }
 
-    .notice.warning .notice-title {
-        background: var(--warning-title)
-    }
-
-    .notice.warning {
-        background: var(--warning-content)
-    }
-
-    .notice.info .notice-title {
-        background: var(--info-title)
-    }
-
-    .notice.info {
-        background: var(--info-content)
-    }
-
-    .notice.note .notice-title {
-        background: var(--note-title)
-    }
-
-    .notice.note {
-        background: var(--note-content)
-    }
-
-    .notice.tip .notice-title {
-        background: var(--tip-title)
-    }
-
-    .notice.tip {
-        background: var(--tip-content)
-    }
-
+    /* Icon */
     .icon-notice {
         display: inline-flex;
         align-self: center;
-        margin-right: 8px
+        margin-right: 8px;
     }
 
     .icon-notice img,
     .icon-notice svg {
         height: 1em;
         width: 1em;
-        fill: currentColor
+        fill: currentColor;
     }
 
     .icon-notice img,
     .icon-notice.baseline svg {
         top: .125em;
-        position: relative
+        position: relative;
     }
 </style>
 {{- $.Page.Scratch.Set "notice-style-loaded-flag" true -}}
