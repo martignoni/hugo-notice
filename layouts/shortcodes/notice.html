@@ -6,7 +6,7 @@
 {{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
 
 {{/* Load the css if it's the first time */}}
-{{- if not ($.Page.Scratch.Get "notice-style-loaded-flag") -}}
+{{- if not (.Page.Store.Get "notice-style-loaded-flag") -}}
 <style type="text/css">
     /* Light theme */
     .notice {
@@ -122,7 +122,7 @@
         position: relative;
     }
 </style>
-{{- $.Page.Scratch.Set "notice-style-loaded-flag" true -}}
+{{- .Page.Store.Set "notice-style-loaded-flag" true -}}
 {{- end -}}
 
 <div class="notice {{ $noticeType }}" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>
