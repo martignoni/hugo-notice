@@ -1,5 +1,6 @@
 {{/* Available notice types: warning, info, note, tip */}}
 {{- $noticeType := .Get 0 | default "note" -}}
+{{- $title := .Get 1 | default "" -}}
 
 {{/* Workaround markdownify inconsistency for single/multiple paragraphs */}}
 {{- $raw := (markdownify .Inner | chomp) -}}
@@ -130,7 +131,7 @@
         <span class="icon-notice baseline">
             {{ printf "icons/%s.svg" $noticeType | readFile | safeHTML }}
         </span>
-        {{- i18n $noticeType -}}
+        {{- if $title }} {{ $title }} {{ else }} {{ i18n $noticeType }} {{ end -}}
     </p>
     {{- if or $block (not $raw) }}{{ $raw }}{{ else }}<p>{{ $raw }}</p>{{ end -}}
 </div>
