@@ -130,3 +130,4 @@ Thanks to
 - [RoneoOrg](https://github.com/RoneoOrg) for implementing default notice type.
 - [Andreas Deininger](https://github.com/deining) for installation as a Hugo module How To.
 - [rea1shane](https://github.com/rea1shane) for suggesting and implementing a few useful features.
+- [Andy Maloney](https://github.com/asmaloney) for implementing a way to replace the title with an arbitrary string.
