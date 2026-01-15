@@ -79,6 +79,16 @@ This is a very good tip.
 {{< /notice >}}
 ```
 
+You may also change the the title of the notice by providing a string as a second argument:
+
+```go
+{{< notice tip "A New Title" >}}
+This is a very good tip with a different title.
+{{< /notice >}}
+```
+
+Note that unlike the built-in ones, these titles are not translatable by hugo-notice. If you need translation, you will need to translate them before passing them in.
+
 ### Enabling dark mode
 
 We recommend that you use the standard [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature to detect if a user has requested light or dark color themes. In this case, dark mode will work automatically. The `prefers-color-scheme` media feature is fully supported by all modern browsers.
